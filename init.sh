@@ -63,8 +63,8 @@ fancy_echo "Updating system packages ..."
 fancy_echo "Installing git, for source control management ..."
   install_if_needed git
 
-fancy_echo "Installing base ruby build dependencies ..."
-  sudo aptitude build-dep -y ruby1.9.3
+fancy_echo "Installing base (ruby) build dependencies ..."
+  sudo aptitude install -y build-essential
 
 fancy_echo "Installing libraries for common gem dependencies ..."
   sudo aptitude install -y libxslt1-dev libcurl4-openssl-dev libksba8 libksba-dev libqtwebkit-dev libreadline-dev
@@ -145,13 +145,13 @@ chruby_from_source() {
 }
 
 ruby_install_from_source() {
-  wget -O /tmp/ruby-install-0.5.0.tar.gz https://github.com/postmodern/ruby-install/archive/v0.5.0.tar.gz
+  wget -O /tmp/ruby-install-0.6.1.tar.gz https://github.com/postmodern/ruby-install/archive/v0.6.1.tar.gz
   cd /tmp/
-  tar -xzvf ruby-install-0.5.0.tar.gz
-  cd /tmp/ruby-install-0.5.0/
+  tar -xzvf ruby-install-0.6.1.tar.gz
+  cd /tmp/ruby-install-0.6.1/
   sudo make install
   cd
-  rm -rf /tmp/ruby-install-0.5.0/
+  rm -rf /tmp/ruby-install-0.6.1/
 }
 
 chruby_from_source
