@@ -208,6 +208,6 @@ fancy_echo "Installing GitHub CLI client ..."
   cd -
 
 fancy_echo "Installing rcm, to manage your dotfiles ..."
-  wget -O /tmp/rcm_1.2.3-1_all.deb https://thoughtbot.github.io/rcm/debs/rcm_1.2.3-1_all.deb
-  sudo dpkg -i /tmp/rcm_1.2.3-1_all.deb
-  rm -f /tmp/rcm_1.2.3-1_all.deb
+  wget -O /tmp/rcm_1.3.0-1_all.deb https://thoughtbot.github.io/rcm/debs/rcm_1.3.0-1_all.deb
+  sudo dpkg -i /tmp/rcm_1.3.0-1_all.deb
+  rm -f /tmp/rcm_1.3.0-1_all.deb
