@@ -155,7 +155,9 @@ ruby_install_from_source() {
 }
 
 chruby_from_source
-ruby_version="$(curl -sSL http://ruby.thoughtbot.com/latest)"
+#ruby_version="$(curl -sSL http://ruby.thoughtbot.com/latest)"
+# hardcode version
+ruby_version="2.4.0"
 
 fancy_echo "Installing ruby-install for super easy installation of rubies..."
   ruby_install_from_source
