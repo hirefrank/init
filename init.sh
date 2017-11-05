@@ -192,7 +192,7 @@ fancy_echo "Installing Heroku CLI client ..."
   curl -s https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 fancy_echo "Installing the heroku-config plugin to pull config variables locally to be used as ENV variables ..."
-  heroku plugins:install git://github.com/Xavdidtheshadow/heroku-config.git
+  heroku plugins:install heroku-config
 
 fancy_echo "Installing GitHub CLI client ..."
   version="$(curl https://github.com/jingweno/gh/releases/latest -s | cut -d'v' -f2 | cut -d'"' -f1)"
