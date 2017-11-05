@@ -45,7 +45,7 @@ fi
 
 append_to_zshrc 'export PATH="$HOME/.bin:$PATH"'
 
-if ! grep -qiE 'wheezy|jessie|precise|trusty|yakkety' /etc/os-release; then
+if ! grep -qiE 'wheezy|jessie|precise|trusty|yakkety|artful' /etc/os-release; then
   fancy_echo "Sorry! we don't currently support that distro."
   exit 1
 fi
