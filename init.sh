@@ -194,20 +194,9 @@ fancy_echo "Installing Heroku CLI client ..."
 fancy_echo "Installing the heroku-config plugin to pull config variables locally to be used as ENV variables ..."
   heroku plugins:install heroku-config
 
-fancy_echo "Installing GitHub CLI client ..."
-  version="$(curl https://github.com/jingweno/gh/releases/latest -s | cut -d'v' -f2 | cut -d'"' -f1)"
-
-  if uname -m | grep -Fq 'x86_64'; then
-    arch='amd64'
-  else
-    arch='i386'
-  fi
-
-  cd /tmp
-  url="https://github.com/jingweno/gh/releases/download/v${version}/gh_${version}_${arch}.deb"
-  curl "$url" -sLo gh.deb
-  sudo dpkg -i gh.deb
-  cd -
+fancy_echo "Installing GitHub Hub CLI client ..."
+  sudo curl https://hub.github.com/standalone -Lo /usr/bin/hub
+  sudo chmod 755 /usr/bin/hub
 
 fancy_echo "Installing rcm, to manage your dotfiles ..."
   wget -O /tmp/rcm_1.3.0-1_all.deb https://thoughtbot.github.io/rcm/debs/rcm_1.3.0-1_all.deb
