@@ -69,11 +69,15 @@ sudo ufw allow mosh
 ```
 sudo ufw allow OpenSSH
 ```
-15. Enable the firewall by typing:
+15. Allow port 9090 (basic Ruby webserver runs on this port):
+```
+sudo ufw allow 9090
+```
+16. Enable the firewall by typing:
 ```
 sudo ufw enable
 ```
-16. Type "y" and press ENTER to proceed. You can see that SSH connections are still allowed by typing:
+17. Type "y" and press ENTER to proceed. You can see that SSH connections are still allowed by typing:
 ```
 sudo ufw status
 ```
