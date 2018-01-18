@@ -107,6 +107,9 @@ fancy_echo "Installing node, to render the rails asset pipeline ..."
 fancy_echo "Installing mosh ..."
   install_if_needed mosh
   
+fancy_echo "Installing Chromium ..."
+  install_if_needed chromium-browser  
+  
 fancy_echo "Changing your shell to zsh ..."
   chsh -s $(which zsh)
 
