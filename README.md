@@ -44,11 +44,11 @@ bash <(wget -qO- https://raw.githubusercontent.com/hirefrank/init/master/init.sh
 ```
 9. Clone the dotfiles repo:
 ```
-git clone git://github.com/hirefrank/dotfiles.git ~/dotfiles
+git clone git@github.com:hirefrank/dotfiles.git ~/dotfiles
 ```
 10. Clone the dotfiles-local repo:
 ```
-git clone git://github.com/hirefrank/dotfiles-local.git ~/dotfiles-local
+git clone git@github.com:hirefrank/dotfiles-local.git ~/dotfiles-local
 ```
 11. Initialize:
 ```
