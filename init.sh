@@ -109,6 +109,9 @@ fancy_echo "Installing mosh ..."
   
 fancy_echo "Installing Chromium ..."
   install_if_needed chromium-browser  
+
+fancy_echo "Installing NPM ..."
+  install_if_needed npm  
   
 fancy_echo "Changing your shell to zsh ..."
   chsh -s $(which zsh)
