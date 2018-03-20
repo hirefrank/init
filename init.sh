@@ -109,9 +109,6 @@ fancy_echo "Installing mosh ..."
   
 fancy_echo "Installing Chromium ..."
   install_if_needed chromium-browser  
-
-fancy_echo "Installing NPM ..."
-  install_if_needed npm  
   
 fancy_echo "Changing your shell to zsh ..."
   chsh -s $(which zsh)
@@ -208,6 +205,3 @@ fancy_echo "Installing rcm, to manage your dotfiles ..."
   wget -O /tmp/rcm_1.3.0-1_all.deb https://thoughtbot.github.io/rcm/debs/rcm_1.3.0-1_all.deb
   sudo dpkg -i /tmp/rcm_1.3.0-1_all.deb
   rm -f /tmp/rcm_1.3.0-1_all.deb
-  
-fancy_echo "Installing serverless ..."
-  sudo npm install -g serverless
